@@ -74,6 +74,46 @@
                 padding: 5px;
                 font-size: 15px;
             }
+            .our-features-heading{
+                color: #ffaa80;
+                margin: 20px;
+                padding: 10px;
+                text-align: center;
+            }
+            .feature-card{
+                position: relative;
+                background: white;
+                width: 300px;
+                padding: 10px;
+                margin: 10px;
+                border-radius: 15px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 2);
+            }
+            .icon-feature{
+                position: absolute;
+                font-size: 50px;
+                left: 125px;
+                top: -35px;
+                background: white;
+                padding: 5px;
+                border-radius: 6px;
+                border:1px solid #ffaa80;
+                color: #ffaa80;
+                width: 70px;
+                text-align: center;
+            }
+            .feature-title{
+                color: #ffaa80;
+                text-align: center;
+            }
+            .feature-description{
+                text-align: center;
+            }
+            .feature-container{
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+            }
            @media only screen and (max-width: 600px){
                 .navbar-menu-container{
                     margin-left: auto;
@@ -87,12 +127,25 @@
                     width: 100%;
                     text-align: center;   
                 }
+                .feature-card{
+                    margin-top: 100px;
+                }
+                .header-container{
+                    text-align: center;
+                }
             }
             @media only screen and (min-width: 601px) and (max-width: 768px){
                 .navbar-menu-container{
                     margin-left: auto;
                     margin-right: auto;
                     padding: 10px;
+                }
+                .feature-container{
+                    display: flex;
+                    justify-content: space-around;
+                }
+                .feature-card{
+                    margin-top: 100px;
                 }
             }
             
@@ -124,11 +177,40 @@
                 <img src="C:\Users\HP\OneDrive\Pictures\for html\seasons-cozy-coffee-shop-with-pastries-1.png" class="shop-img"/>
             </div>
            <div>
-            <h1 class="header-title">We bake your dreams...</h1>
-            <p class="header-description">Order your favourite cake now!</p>
-            <button class="btn">Explore cakes</button>
+                <h1 class="header-title">We bake your dreams...</h1>
+                <p class="header-description">Order your favourite cake now!</p>
+                <button class="btn">Explore cakes</button>
            </div>
 
         </div>
+        <div>
+            <h1 class="our-features-heading">Why choose us?</h1>
+
+            <div class="feature-container">
+                <div class="feature-card">
+                    <i class="fa-solid fa-fire-burner fa-fade icon-feature"></i>
+                    <h3 class="feature-title">Freshly Backed Cakes</h3>
+                    <p class="feature-description">Our cakes are freshly backed and are delivered to you within 3 hours of backing.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fa-solid fa-box-open fa-beat icon-feature"></i>
+                    <h3 class="feature-title">Free Delivery</h3>
+                    <p class="feature-description">We provide free delivery of cakes within 10km of range of the shop.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fa-solid fa-egg fa-bounce icon-feature"></i>
+                    <h3 class="feature-title">Eggless Cakes</h3>
+                    <p class="feature-description">We provide eggless cakes for all of our vegeterian customers.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fa-solid fa-cake-candles fa-flip icon-feature"></i>
+                    <h3 class="feature-title">Unique Designs</h3>
+                    <p class="feature-description">We provide custom made cakes and variety with unique designs.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <script src="https://kit.fontawesome.com/6ead3ba372.js" crossorigin="anonymous"></script>
     </body>
 </html>
