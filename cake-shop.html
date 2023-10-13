@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cake shop</title>
+        <style>
+            xyz{
+                color: #ffaa80;
+                color:#ffe6e6;
+                color: #99ff99;
+                color:#ffff99;
+            }
+           body{
+            background: #ffe6e6;
+           } 
+           .navbar{
+            background: #ffaa80;
+            border-radius: 10px;
+            padding: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+           }
+           .navbar-brand{
+            margin: 10px;
+            
+           }
+           #navbar-icon{
+            height: 80px;
+           }
+           #navbar-brand-name{
+            font-family:'Times New Roman', Times, serif;
+            font-size: 50px;
+           }
+           .navbar-menu-container{
+            margin-left: auto;
+            margin-right: auto;
+            padding: 10px;
+            
+           }
+           .navbar-menu{
+            padding: 5px 20px;
+            margin: 10px;
+            cursor: pointer;
+            background: #ffe6e6;
+            border-radius: 15px;
+           }
+            .navbar-menu:hover{
+                background:#ffffbb;
+                transition: 0.5s;
+                padding: 7px 25px;
+                box-shadow: 0 0 2px 1px #ffffbb;
+            }
+            .header-container{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                align-items: center;
+            }
+            .shop-img{
+                margin: 20px;
+                height: 300px;
+            }
+            .header-title{
+                color: #ffaa80; 
+                font-size: 50px;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+            .header-description{
+                font-size: 20px;
+            }
+            .btn{
+                border-radius: 20px;
+                background: #ffaa80;
+                padding: 5px;
+                font-size: 15px;
+            }
+           @media only screen and (max-width: 600px){
+                .navbar-menu-container{
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                .navbar{
+                    flex-direction: column;
+                }
+                .navbar-menu{
+                    display: block;
+                    width: 100%;
+                    text-align: center;   
+                }
+            }
+            @media only screen and (min-width: 601px) and (max-width: 768px){
+                .navbar-menu-container{
+                    margin-left: auto;
+                    margin-right: auto;
+                    padding: 10px;
+                }
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="navbar">
+
+            <div class="navbar-brand">
+                <img src="C:\Users\HP\Downloads\cake.png" id="navbar-icon"/>
+                <span id="navbar-brand-name">Cake Studio</span>
+            </div>
+
+            <div class="navbar-menu-container">
+                <span class="navbar-menu">Home</span>
+
+                <span class="navbar-menu">About</span>
+
+                <span class="navbar-menu">Services</span>
+
+                <span class="navbar-menu">Contact</span>
+            </div>
+
+        </div>
+        
+        <div class="header-container">
+            
+            <div >
+                <img src="C:\Users\HP\OneDrive\Pictures\for html\seasons-cozy-coffee-shop-with-pastries-1.png" class="shop-img"/>
+            </div>
+           <div>
+            <h1 class="header-title">We bake your dreams...</h1>
+            <p class="header-description">Order your favourite cake now!</p>
+            <button class="btn">Explore cakes</button>
+           </div>
+
+        </div>
+    </body>
+</html>
