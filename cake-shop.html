@@ -71,8 +71,14 @@
             .btn{
                 border-radius: 20px;
                 background: #ffaa80;
-                padding: 5px;
+                font-weight: bold;
+                cursor: pointer;
+                display: block;
+                border: none;
+                padding: 5px 20px;
                 font-size: 15px;
+                margin-top: 20px;
+                
             }
             .our-features-heading{
                 color: #ffaa80;
@@ -114,6 +120,58 @@
                 justify-content: space-around;
                 flex-wrap: wrap;
             }
+            .our-cakes-heading{
+                color: #ffaa80;
+                margin: 20px;
+                padding: 10px;
+                text-align: center;
+            }
+            .cake-card{
+                background: rgb(255, 255, 255);
+                margin: 20px;
+                padding: 40px 20px;
+                border-radius: 10px;
+                width: 300px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 2);
+            }
+            .cake-card-image{
+                height:200px;
+                display: block;
+                margin: 5px auto;
+                filter: drop-shadow( 0 0 10px rgba(255, 255, 153, 2)); 
+            }
+            .cake-card-title{
+                display:block;
+                text-align: center;
+                margin: 10px;
+                font-size: 30px;
+                color: #ffaa80;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+            .price-tag{
+                display: block;
+                text-align: center;
+            }
+            .order-now-btn{
+                border-radius: 20px;
+                background: #ffaa80;
+                font-weight: bold;
+                cursor: pointer;
+                display: block;
+                border: none;
+                padding: 5px 20px;
+                font-size: 15px;
+                margin-top: 20px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .cakes-container{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                margin: 50px;
+            }
+           
            @media only screen and (max-width: 600px){
                 .navbar-menu-container{
                     margin-left: auto;
@@ -140,6 +198,15 @@
                     margin-right: auto;
                     padding: 10px;
                 }
+                .feature-container{
+                    display: flex;
+                    justify-content: space-around;
+                }
+                .feature-card{
+                    margin-top: 100px;
+                }
+            }
+            @media only screen and (min-width: 801px){
                 .feature-container{
                     display: flex;
                     justify-content: space-around;
@@ -179,7 +246,7 @@
            <div>
                 <h1 class="header-title">We bake your dreams...</h1>
                 <p class="header-description">Order your favourite cake now!</p>
-                <button class="btn">Explore cakes</button>
+                <button class="btn">Explore cakes 👉</button>
            </div>
 
         </div>
@@ -210,6 +277,54 @@
             </div>
 
         </div>
+
+        <h1 class="our-cakes-heading">Our Cakes</h1>
+       
+        <div class="cakes-container">
+
+            <div class="cake-card">
+                <img src="C:\Users\HP\OneDrive\Pictures\for html\strawberry-cake.png (2).png" class="cake-card-image"/>
+                <h3 class="cake-card-title">Strawberry Cake</h3>
+                <h2 class="price-tag">Rs.399/-</h2>
+                <button class="order-now-btn">Order Now</button>
+            </div>
+
+            <div class="cake-card">
+                <img src="C:\Users\HP\OneDrive\Pictures\for html\black-forest.png" class="cake-card-image"/>
+                <h3 class="cake-card-title">Black-forest Cake</h3>
+                <h2 class="price-tag">Rs.299/-</h2>
+                <button class="order-now-btn">Order Now</button>
+            </div>
+
+            <div class="cake-card">
+                <img src="C:\Users\HP\OneDrive\Pictures\for html\cheesecake.png" class="cake-card-image"/>
+                <h3 class="cake-card-title">Cheesecake</h3>
+                <h2 class="price-tag">Rs.299/-</h2>
+                <button class="order-now-btn">Order Now</button>
+            </div>
+
+            <div class="cake-card">
+                <img src="C:\Users\HP\OneDrive\Pictures\for html\cake (1).png" class="cake-card-image"/>
+                <h3 class="cake-card-title">Chocolate Cake</h3>
+                <h2 class="price-tag">Rs.199/-</h2>
+                <button class="order-now-btn">Order Now</button>
+            </div>
+
+            <div class="cake-card">
+                <img src="C:\Users\HP\OneDrive\Pictures\for html\layer-cake.png.png" class="cake-card-image"/>
+                <h3 class="cake-card-title">Layer-cake</h3>
+                <h2 class="price-tag">Rs.399/-</h2>
+                <button class="order-now-btn">Order Now</button>
+            </div>
+
+            <div class="cake-card">
+                <img src="C:\Users\HP\OneDrive\Pictures\for html\cup-cake.png" class="cake-card-image"/>
+                <h3 class="cake-card-title">Cup-cake</h3>
+                <h2 class="price-tag">Rs.60/-</h2>
+                <button class="order-now-btn">Order Now</button>
+            </div>
+        </div>
+        
 
         <script src="https://kit.fontawesome.com/6ead3ba372.js" crossorigin="anonymous"></script>
     </body>
